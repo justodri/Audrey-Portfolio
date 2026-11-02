@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Audrey Chan Hui Jing's personal portfolio">
+    <title>Audrey Chan | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Plus+Jakarta+Sans:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Header & persistent navigation -->
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="logo" href="#home">Welcome to AUDREY'S<span class="accent-text"> PORTFOLIO</span></a>
+
+            <button class="hamburger" id="hamburger" type="button"
+                    aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
+                <span></span><span></span><span></span>
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home" class="active">Home</a></li>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+
+        <!-- Home -->
+        <section id="home" class="slide hero" aria-labelledby="heroTitle">
+            <span class="ghost-text" aria-hidden="true">Audrey's</span>
+
+            <p class="availability-badge"><span class="status-dot" aria-hidden="true"></span>Open to internship opportunities</p>
+
+            <h1 class="hero-title" id="heroTitle">Greetings...<span class="sr-only">Audrey Chan Hui Jing</span></h1>
+
+            <p class="hero-role">
+                <span class="hero-symbol" aria-hidden="true">•┈••✦ ❤ ✦••┈•</span>
+                <span class="typed" id="typedText" aria-hidden="true"></span>
+                <span class="hero-symbol" aria-hidden="true">•┈••✦ ❤ ✦••┈•</span>
+            </p>
+
+            <div class="hero-actions">
+                <a href="#about" class="btn">Let's Get Started!!!</a>
+                <a href="#contact" class="btn btn-outline">Contact Me Here!!!</a>
+            </div>
+        </section>
+
+        <!-- About Me -->
+        <section id="about" class="slide about" aria-labelledby="aboutTitle">
+
+            <div class="about-grid">
+                <div class="about-text reveal">
+                    <h2 id="aboutTitle">About Me</h2>
+                    <p>Age: 22 years old</p>
+                    <p>D.O.B: 15 June 2004</p>
+                    <p>Major: 3rd Year in Network Computing</p>
+                    <p>Current CGPA: 3.09</p>
+                    <p>Address: Kuching, Sarawak</p>
+                    <p><strong>Currently looking for an internship</strong> in networking, IT support or software development, where I can apply what I've learned in class and keep growing through hands-on experience.</p>
+                    <p>I am a fast learner in any tasks given varying in <strong>IT, Business and Documentations</strong>. I love learning many languages in hopes to get to know more people and able to be useful to translate any inquiries.</p>
+                    <p>I would also like to look for more opportunities to experience on <strong>Cybersecurity and Network Administration</strong> related works.</p>
+                </div>
+
+                <div class="portrait-container reveal pop">
+                    <button class="polaroid" id="portraitBtn" type="button"
+                            aria-haspopup="dialog" aria-controls="portraitModal"
+                            aria-label="Open a larger portrait of Audrey Chan Hui Jing">
+                        <span class="tape" aria-hidden="true"></span>
+                        <span class="photo-frame">
+                            <img class="portrait-img" src="audrey.png" alt="Portrait of Audrey Chan Hui Jing" width="260" height="220">
+                            <span class="photo-fallback" aria-hidden="true">AC</span>
+                        </span>
+                        <span class="portrait-caption">Audrey Chan Hui Jing</span>
+                        <span class="click-hint" aria-hidden="true">Click to know more!</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills" class="slide skills-section" aria-labelledby="skillsTitle">
+            <h2 id="skillsTitle" class="centered">Skills &amp; Tools</h2>
+
+            <div class="skills-grid">
+                <div class="skill-card glow-card reveal">
+                    <h3>Ongoing Skills Development</h3>
+                    <ul class="pill-group">
+                        <li class="pill">HTML</li>
+                        <li class="pill">CSS</li>
+                        <li class="pill">JavaScript</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card glow-card reveal">
+                    <h3>Tools &amp; Concepts</h3>
+                    <ul class="pill-group">
+                        <li class="pill">Java Programming</li>
+                        <li class="pill">C &amp; C++ Programming</li>
+                        <li class="pill">VirtualBox</li>
+                        <li class="pill">XAMPP MySQL Database Management</li>
+                        <li class="pill">Figma HCI UI/UX Design</li>
+                        <li class="pill">Python &amp; Object Oriented Design</li>
+                        <li class="pill">Cisco Packet Tracer</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card glow-card reveal">
+                    <h3>Soft Skills</h3>
+                    <ul class="pill-group">
+                        <li class="pill">Team Leadership</li>
+                        <li class="pill">Problem Solving</li>
+                        <li class="pill">Team Communication</li>
+                        <li class="pill">Customer Service</li>
+                        <li class="pill">Public Speaking</li>
+                        <li class="pill">Event Management</li>
+                        <li class="pill">Entrepreneurship</li>
+                    </ul>
+                </div>
+
+                <div class="skill-card glow-card reveal">
+                    <h3>Languages</h3>
+                    <ul class="pill-group">
+                        <li class="pill">English Independent B2</li>
+                        <li class="pill">Malay STPM Level</li>
+                        <li class="pill">Chinese Intermediate</li>
+                        <li class="pill">French Level 1</li>
+                        <li class="pill">Japanese Level 1</li>
+                        <li class="pill">Bidayuh</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education, Achievements & Work Experience -->
+        <section id="experience" class="slide experience-section" aria-labelledby="experienceTitle">
+            <h2 id="experienceTitle" class="centered">Education &amp; Experience</h2>
+            <p class="contact-intro">Seeking an internship in networking, IT support, basic cybersecurity or software development. Here is the background I bring.</p>
+
+            <div class="timeline-grid">
+                <div class="timeline-col">
+                    <h3 class="timeline-heading">Education</h3>
+                    <ol class="timeline">
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">October 2024 - Present</span>
+                            <h4>Bachelor of Computer Science (Network Computing), UNIMAS</h4>
+                            <p>Honors: Dean's List Award, 2025/2026-1 </p>
+                            <p>Studying networking, programming, databases, operating systems and computer security. My coursework projects are listed in the Projects section.</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">July 2022 - April 2024</span>
+                            <h4>Sijil Tinggi Persekolahan Malaysia (STPM), SMK Green Road, Kuching</h4>
+                            <p>Taken subjects in History, Business studies.</p>
+                            <p>CGPA: 2.58</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">2017 - 2021</span>
+                            <h4>Sijil Pelajaran Malaysia (SPM), SMK Green Road, Kuching</h4>
+                            <p>Achieved an A in English (CEFR B2 level) and an A in Science.</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="timeline-col">
+                    <h3 class="timeline-heading">Work &amp; Entrepreneurship</h3>
+                    <ol class="timeline">
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">July 2026 - Current</span>
+                            <h4>Part-Time Ice Cream Bartender, Samfah (Sarawak Plaza Branch & Topspot UTC), Kuching</h4>
+                            <p>Learned time management skills alternating between work and study. Solving transaction issues internally and externally.</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">May 2024 - August 2024</span>
+                            <h4>Part-Time Cashier, Samfah (Sungai Maong Branch), Kuching</h4>
+                            <p>Processed cash, card and e-wallet transactions accurately on a POS system, kept the cash drawer balanced every shift and resolved shopper enquiries in a busy store. Built accuracy, accountability and the ability to stay calm under pressure.</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">October 2024 - January 2025</span>
+                            <h4>Product Sales &amp; Marketing Lead, MPU Entrepreneurship Project (UNIMAS)</h4>
+                            <p>Co-founded a student-led brownie micro-venture on campus. Handled sales, order tracking, cash collection and customer feedback, and planned promotions with teammates.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+
+            <div class="timeline-grid">
+                <div class="timeline-col">
+                    <h3 class="timeline-heading">Community &amp; Events</h3>
+                    <ol class="timeline">
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">October 2026</span>
+                            <h4>Event Participant, Canva Workshop (UNIMAS, Online)</h4>
+                            <p>Attended on how to create designs using Canva.</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">June 2025</span>
+                            <h4>Event Participant, Patchwork KK Day (UNIMAS)</h4>
+                            <p>Supported team coordination and student community engagement, and helped with patchwork making before the event day.</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">December 2024</span>
+                            <h4>Committee Member, E-Waste Awareness Project (FCSIT, UNIMAS)</h4>
+                            <p>Co-organised a faculty-wide &quot;Going Zero Waste&quot; initiative promoting proper handling of hazardous electronic waste, and presented group summaries on recycling.</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">November 2023</span>
+                            <h4>Volunteer, Blood Donation Campaign (Malaysian Red Crescent, Kuching Branch)</h4>
+                            <p>Volunteered as a participant in a community blood donation drive at Sarawak General Hospital.</p>
+                        </li>
+                    </ol>
+                </div>
+                <div class="timeline-col">
+                    <h3 class="timeline-heading">School Leadership</h3>
+                    <ol class="timeline">
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">January 2023 - March 2024</span>
+                            <h4>Committee Member, Pre-University Student Representative Council (SMK Green Road)</h4>
+                            <p>Organised student-led activities and bridged communication between the student body and school administration.</p>
+                        </li>
+                        <li class="timeline-item glow-card reveal">
+                            <span class="timeline-date">January 2020 - January 2021</span>
+                            <h4>School Prefect, Prefectorial Board (SMK Green Road)</h4>
+                            <p>Carried out school-wide initiatives including the Recycling Campaign, the Herbal Garden Project and a Teacher's Retirement Celebration.</p>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects" class="slide projects-section" aria-labelledby="projectsTitle">
+            <h2 id="projectsTitle" class="centered">Projects</h2>
+
+            <div class="project-controls">
+                <div class="filter-group" role="group" aria-label="Filter projects by category">
+                    <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                    <button type="button" class="filter-btn" data-filter="programming" aria-pressed="false">Programming</button>
+                    <button type="button" class="filter-btn" data-filter="systems" aria-pressed="false">Systems &amp; Data</button>
+                    <button type="button" class="filter-btn" data-filter="networks" aria-pressed="false">Networks &amp; Hardware</button>
+                    <button type="button" class="filter-btn" data-filter="security" aria-pressed="false">Security</button>
+                    <button type="button" class="filter-btn" data-filter="design" aria-pressed="false">UI/UX</button>
+                </div>
+            </div>
+            <p class="project-count" id="projectCount" aria-live="polite"></p>
+
+            <div class="projects-list" id="projectsList">
+
+                <article class="project-item glow-card reveal" data-category="programming">
+                    <div class="project-header">
+                        <h3>Wildlife Tracking &amp; Reporting Systems</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> C Language</p>
+                    <p class="project-meta"><strong>Subject:</strong> Introduction to Programming</p>
+                    <p class="project-desc">A console-based data tracking system built to report and monitor wildlife populations.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="systems">
+                    <div class="project-header">
+                        <h3>Fitness &amp; Wellness Tracking Application</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> UML / System Tools</p>
+                    <p class="project-meta"><strong>Subject:</strong> System Analysis &amp; Design</p>
+                    <p class="project-desc">Comprehensive system specification covering system requirements, data flow and architecture.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="networks">
+                    <div class="project-header">
+                        <h3>RISC CPU Architecture Simulator</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> Logic Simulation</p>
+                    <p class="project-meta"><strong>Subject:</strong> Computer Architecture</p>
+                    <p class="project-desc">A specialized program modeling the core operational cycles and register execution of a Reduced Instruction Set Computing CPU.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="networks">
+                    <div class="project-header">
+                        <h3>Computer Network Topology Design</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> Cisco Packet Tracer
+                    <p class="project-meta"><strong>Subject:</strong> Communication & Computer Networks</p>
+                    <p class="project-desc">An enterprise network design proposal mapping core communication hardware, VLANs and subnets tailored for target organizations.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="programming">
+                    <div class="project-header">
+                        <h3>MediTrack - Hospital Patient Management System</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> C++</p>
+                    <p class="project-meta"><strong>Subject:</strong> Data Structure & Object-Oriented Programming</p>
+                    <p class="project-desc">Object-oriented C++ solution managing secure patient health records, doctor appointments and hospital operations.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="systems">
+                    <div class="project-header">
+                        <h3>Fitlife Wellness Centre Database System</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> XAMPP MySQL</p>
+                    <p class="project-meta"><strong>Subject:</strong> Database Management Systems</p>
+                    <p class="project-desc">A normalized relational database design modeling member profiles, instructor class schedules, subscriptions and transactions.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="programming">
+                    <div class="project-header">
+                        <h3>DirectFarm Samarahan Application</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> Python</p>
+                    <p class="project-meta"><strong>Subject:</strong> Object-Oriented Design</p>
+                    <p class="project-desc">An object-oriented e-commerce system architecture connecting local farmers directly with consumers in Samarahan.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="programming">
+                    <div class="project-header">
+                        <h3>Round Robin CPU Scheduling Simulator</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> C++ / Java</p> 
+                    <p class="project-meta"><strong>Subject:</strong> Operating Systems</p>
+                    <p class="project-desc">An operating system simulation demonstrating time-slice CPU process scheduling and turnaround / waiting-time statistics.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="programming">
+                    <div class="project-header">
+                        <h3>Ecosphere Smartphone Hub</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> Java</p>
+                    <p class="project-meta"><strong>Subject:</strong> Java Programming</p>
+                    <p class="project-desc">A Java desktop application that educates users on the United Nations Sustainable Development Goals, focusing on SDG 14 (Life Below Water) and SDG 15 (Life on Land).</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="security">
+                    <div class="project-header">
+                        <h3>AI/ML Multi-Factor Authentication</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> Python / Machine Learning / Cybersecurity</p>
+                    <p class="project-meta"><strong>Subject:</strong> Computer Security</p>
+                    <p class="project-desc">A security implementation leveraging machine learning heuristics during MFA verification to mitigate password-guessing attacks.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="design">
+                    <div class="project-header">
+                        <h3>MOT Sarawak EV Center Control Panel Design</h3>
+                        <span class="status-badge">Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> Figma</p>
+                    <p class="project-meta"><strong>Subject:</strong> Human-Computer Interaction (HCI)</p>
+                    <p class="project-desc">Request for Proposal (RFP) response for Sarawak's first homegrown EV brand, designing an ergonomic dashboard control panel following HCI principles.</p>
+                </article>
+
+                <article class="project-item glow-card reveal" data-category="security">
+                    <div class="project-header">
+                        <h3>Cybersecurity</h3>
+                        <span class="status-badge">Online Academic Coursework</span>
+                    </div>
+                    <p class="project-meta"><strong>Tech Stack:</strong> Linux / SQL / Python</p>
+                    <p class="project-meta"><strong>Subject:</strong> Google Cousera</p>
+                    <p class="project-desc">Learn foundational threat detection, risk management, network security, and incident response.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact" class="slide contact" aria-labelledby="contactTitle">
+            <h2 id="contactTitle" class="centered">Contact Me</h2>
+            <p class="contact-intro">I'm open to internship opportunities. Reach me directly on any channel below, or send a message in the form.</p>
+
+            <ul class="contact-channels" aria-label="Ways to contact me">
+                <li class="channel-card glow-card reveal">
+                    <span class="channel-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+                    </span>
+                    <div class="channel-info">
+                        <h3>Email</h3>
+                        <a class="channel-value" id="emailLink" href="#">odrihhhhh1506@gmail.com</a>
+                        <button type="button" class="copy-btn" data-copy="email" aria-label="Copy email address">Copy</button>
+                    </div>
+                </li>
+
+                <li class="channel-card glow-card reveal">
+                    <span class="channel-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.2-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+                    </span>
+                    <div class="channel-info">
+                        <h3>WhatsApp</h3>
+                        <a class="channel-value" id="whatsappLink" href="#">+60 10-366 3530</a>
+                        <button type="button" class="copy-btn" data-copy="whatsapp" aria-label="Copy WhatsApp number">Copy</button>
+                    </div>
+                </li>
+
+                <li class="channel-card glow-card reveal">
+                    <span class="channel-icon in-glyph" aria-hidden="true">in</span>
+                    <div class="channel-info">
+                        <h3>LinkedIn</h3>
+                        <a class="channel-value" id="linkedinLink" href="#">linkedin.com/in/audrey-chan-hui-jing/</a>
+                        <button type="button" class="copy-btn" data-copy="linkedin" aria-label="Copy LinkedIn profile link">Copy</button>
+                    </div>
+                </li>
+            </ul>
+            <p class="copy-status" id="copyStatus" role="status" aria-live="polite"></p>
+
+            <form id="contactForm" novalidate>
+                <div class="form-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" autocomplete="name" required aria-describedby="nameError">
+                    <small class="error-message" id="nameError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="number">Contact No.</label>
+                    <input type="number" id="number" name="number" autocomplete="number" required aria-describedby="numError">
+                    <small class="error-message" id="numError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required aria-describedby="emailError">
+                    <small class="error-message" id="emailError"></small>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea id="message" name="message" rows="4" maxlength="500" required aria-describedby="messageError messageCount"></textarea>
+                    <div class="field-footer">
+                        <small class="error-message" id="messageError"></small>
+                        <small class="char-count" id="messageCount">0 / 500</small>
+                    </div>
+                </div>
+                <div class="form-actions">
+                    <button type="submit" class="btn" data-channel="email">Send via Email</button>
+                    <button type="submit" class="btn btn-whatsapp" data-channel="whatsapp">Send via WhatsApp</button>
+                </div>
+                <p id="formStatus" role="status" aria-live="polite"></p>
+            </form>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; <span id="year">2026</span> Audrey Chan Hui Jing.</p>
+        <p>•┈••✦ ❤ ✦••┈• Created with HTML, CSS & JavaScript •┈••✦ ❤ ✦••┈•</p>
+    </footer>
+
+    <button class="back-to-top" id="backToTop" type="button" aria-label="Back to top" hidden>&uarr;</button>
+
+    <!-- Portrait pop-up (dialog) -->
+    <div class="modal" id="portraitModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+        <div class="modal-backdrop" data-close-modal></div>
+        <div class="modal-card landscape-card">
+            <button class="modal-close" type="button" data-close-modal aria-label="Close portrait">&times;</button>
+            <div class="photo-frame modal-photo-landscape">
+                <img class="portrait-img" src="landscape.png" alt="Biography of Audrey Chan Hui Jing">
+                <span class="photo-fallback" aria-hidden="true">AC</span>
+            </div>
+
+            <div class="scrapbook-details">
+            <h2 id="modalTitle">Hi, I'm Odri ! ♡︎</h2>
+            <p>I am someone who loves cats ≽^-⩊-^≼, fashion ✧₊⁺🕯⋆.˚୨ৎ, music 🎧ྀི♪⋆.✮ and with many other hobbies.</p>
+            <p>Look at this scrapbook I made ദ്ദി(ᵔᗜᵔ)</p>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
